@@ -1,3 +1,3 @@
 <?php 
-$conn=mysqli_connect("localhost","root","","knowledgeShareDB")or die("Can't Connect...");	
+$dbconn=mysqli_connect("localhost","root","","knowledgeShareDB")or die("Can't Connect...");	
 ?>
