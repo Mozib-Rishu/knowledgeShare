@@ -1,0 +1,21 @@
+.login_signup{
+  width: 100%;
+  position: center;
+}
+
+.footer {
+		  background-color: #f2f2f2;
+		  position: absolute;
+		  bottom: 0;
+		  padding:10px;
+		  width: 100%;
+		  height: 3.5rem; 
+  	}
+
+ .page-container{
+ 	min-height: 100vh;
+ }
+
+#image {
+  margin-block-end: 10px;
+}
