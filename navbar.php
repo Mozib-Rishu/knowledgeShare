@@ -15,9 +15,9 @@
         <?php 
           if(isset($_SESSION['status']))
           {
-            echo '<li><a href="create_course.php">Create Course</a></li>';
-            echo '<li><a href="my_profile.php">My Profile</a></li>';
-            echo '<li><a href="logout.php">Logout</a></li>';
+            echo '<li><a href="#">Create Course</a></li>';
+            echo '<li><a href="#">My Profile</a></li>';
+            echo '<li><a href="#">Logout</a></li>';
           }
           else
           {
