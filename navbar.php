@@ -1,5 +1,3 @@
-<?php include("head.php");?>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -10,13 +8,13 @@
       <ul class="nav navbar-nav navbar-right ">
         <li><a href="/knowledgeShare">Home</a></li>
         <li><a href="#">Help</a></li>
-        <li><a href="#">Courses</a></li>
+        <li><a href="all_courses.php">Courses</a></li>
         <?php 
-          if(isset($_SESSION['status']))
+          if(isset($_SESSION['username']))
           {
             echo '<li><a href="#">Create Course</a></li>';
             echo '<li><a href="#">My Profile</a></li>';
-            echo '<li><a href="#">Logout</a></li>';
+            echo '<li><a href="logout.php">Logout</a></li>';
           }
           else
           {
