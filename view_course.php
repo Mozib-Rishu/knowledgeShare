@@ -8,6 +8,7 @@
 
     $username=$_GET['course_username'];
     $course_id=$_GET['course_id'];
+
     $sql = "SELECT * FROM lectures WHERE lecture_courseid = '$course_id'";
     $result = mysqli_query($conn, $sql);
     $lectures = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -50,6 +51,26 @@
                     $lecture = mysqli_fetch_assoc($result);
                     ?>
                     <div><h4><?php echo $lecture['lecture_title'];?></h4></div>
+
+                    <?php
+                    if($username===$_SESSION['username'])
+                    {?>
+                        
+                            <a onclick="return confirm('Are you Sure?');" href="delete_lecture.php?lecture_id=<?php echo $lecture_id; ?>&course_id=<?php echo $lecture['lecture_courseid']; ?>&username=<?php echo $lecture['lecture_username']; ?>"><button type="button" class="btn btn-primary">Delete</button></a>
+
+                            <a href="update_lecture.php?lecture_id=<?php echo $lecture_id; ?>&course_id=<?php echo $lecture['lecture_courseid']; ?>&username=<?php echo $lecture['lecture_username']; ?>"><button type="button" class="btn btn-primary">Edit</button></a>
+                            <hr>
+
+
+                            
+                        
+                    <?php
+
+                    }
+
+                 ?>
+
+
                     <?php echo $lecture['lecture_body'];?>
                     <?php 
                 }
@@ -61,16 +82,31 @@
         <div id="lectures">
             <h1>Lectures</h1>
 
+            
+                <?php
+                    if($username===$_SESSION['username'])
+                    {?>
+                        
+                            <a href="create_lecture.php?course_id=<?php echo $course_id; ?>&course_username=<?php echo $username; ?>"><button type="button" class="btn btn-primary">Add Lecture</button></a>
+
+                            
+                        
+                    <?php
+
+                    }
+
+                 ?>
+
+            <ul>
             <?php foreach ($lectures as $lecture): ?>
             
-                
-                    <h3><?php echo $lecture['lecture_title'] ?></h3>
-
-                    
-                    
+                <li>
                     <a href="view_course.php?course_id=<?php echo $lecture['lecture_courseid']; ?>&course_username=<?php echo $lecture['lecture_username'];?>&lecture_id=<?php echo $lecture['lecture_id']; ?>"><h4><?php echo $lecture['lecture_title'] ?></h4></a>
 
+                    </li>
+
         <?php endforeach ?>
+        </ul>
         </div>     
 
         

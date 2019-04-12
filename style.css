@@ -1,8 +1,14 @@
 body {
   background-color: #f1f1f1;
   padding: 20px;
+  min-height: 120vh;
+  margin-bottom: 30px;
   font-family: Arial;
 }
+
+.cke_textarea_inline{
+       border: 1px solid black;
+    }
 
 .login_signup{
   width: 100%;
@@ -22,10 +28,22 @@ body {
   padding: 3px 0px;
 }
 
+.bttn{
+  display: block;
+  float: left;
+}
+
 
 #image {
   margin-block-end: 10px;
 }
+
+.submit_btn{
+margin: auto;
+text-align: center;
+}
+
+
 
 
 

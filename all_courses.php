@@ -19,6 +19,7 @@
     <title>Knowledge Share</title>
     <link rel="stylesheet" type="text/css" href="box.css" />
         <link rel="stylesheet" type="text/css" href="card.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
     <?php include("head.php");?>
 </head>
 
@@ -40,6 +41,23 @@
                     <h5><?php echo $course['course_desc'] ?></h5>
                     <hr>
                     <a href="view_course.php?course_id=<?php echo $course['course_id']; ?>&course_username=<?php echo $course['course_username']; ?>"><button type="button" class="btn btn-primary">View</button></a>
+
+                    <?php 
+
+                    if($course['course_username']===$_SESSION['username'])
+                    {?>
+                        <a href="update_course.php?course_id=<?php echo $course['course_id']; ?>&course_username=<?php echo $course['course_username']; ?>"><button type="button" class="btn btn-primary" style="float: left;overflow: hidden;">Update</button></a>
+
+                        <a onclick="return confirm('Are you Sure?');" href="delete_course.php?course_id=<?php echo $course['course_id']; ?>"><button type="button" class="btn btn-primary">Delete</button></a>
+
+
+                    <?php }
+
+                    ?>
+
+
+                    
+
                 
 
             

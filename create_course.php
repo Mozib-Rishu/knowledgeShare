@@ -56,7 +56,7 @@
                           </div>
                           <div class="form-group">
                             <label for="description">Description:</label>
-                            <
+                            
                             <input type="text" class="form-control" name="description" rows="3">
                           </div>
 

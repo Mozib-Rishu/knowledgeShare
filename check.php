@@ -1,0 +1,1 @@
+"create_lecture.php?course_id=" + <?php echo '$course_id'; ?> + "&course_username=" + <?php echo $username; ?> + "
