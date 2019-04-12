@@ -1,16 +1,23 @@
 #courseview{
-	width: 80%;
+	width: 78%;
 	float: left;
 	padding: 10px;
 	border: 2px;
+	min-height: 1000px;
 	border-color: red;
 	text-align: center;
 }
 
-#lecture{
+#lectures{
 	width:20%;
+	max-width: 20%;
 	float: right;
 	padding: 10px;
 	border-color: blue;
 
+}
+
+#lecture_body{
+	padding: 10px;
+	text-align: left;
 }

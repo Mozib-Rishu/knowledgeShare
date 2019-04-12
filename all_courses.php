@@ -39,7 +39,7 @@
                     <h3><?php echo $course['course_title'] ?></h3>
                     <h5><?php echo $course['course_desc'] ?></h5>
                     <hr>
-                    <a href="view_course.php?course_id=<?php echo $course['course_id']; ?>&course_username=<?php echo $course['course_username']; ?>"><button type="button" style="float: bottom;">View</button></a>
+                    <a href="view_course.php?course_id=<?php echo $course['course_id']; ?>&course_username=<?php echo $course['course_username']; ?>"><button type="button" class="btn btn-primary">View</button></a>
                 
 
             

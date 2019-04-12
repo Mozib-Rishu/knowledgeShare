@@ -29,7 +29,7 @@ body {
   float: left;
   width: 25%;
   height: 300px;
-  min-height: 300px;
+  min-height: 300px
 }
 
 /* Clear floats after rows */ 
