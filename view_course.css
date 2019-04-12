@@ -1,0 +1,16 @@
+#courseview{
+	width: 80%;
+	float: left;
+	padding: 10px;
+	border: 2px;
+	border-color: red;
+	text-align: center;
+}
+
+#lecture{
+	width:20%;
+	float: right;
+	padding: 10px;
+	border-color: blue;
+
+}

@@ -17,10 +17,8 @@
         $query = "INSERT into courses (course_title, course_desc, course_username) VALUES ('$title', '$description', '$username')";
         $result = mysqli_query($conn,$query);
         
-        if($result){
-
-            
-            header('location: card.php');
+        if($result){            
+            header('location: all_courses.php');
         }
 
         } else{
@@ -43,11 +41,11 @@
             
 
             <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
                     <div class="conatainer-fluid">
                         
-                        <form action="create_course.php" method="post" class="border border-light p-5">
+                        <form action="create_course.php" method="post" class="border p-5">
 
                         <p class="h2 mb-4 text-center">Create Course</p>
 
@@ -58,18 +56,19 @@
                           </div>
                           <div class="form-group">
                             <label for="description">Description:</label>
+                            <
                             <input type="text" class="form-control" name="description" rows="3">
                           </div>
 
                         <br><br>
-                        <button class="btn btn-info btn-block my-4" type="submit" name="submit">Sign up</button>
+                        <button class="btn btn-info btn-block my-4" type="submit" name="submit">Create Course</button>
                         
                         
                         </form>
 
                     </div>
                 </div>
-                <div class="col-sm-4"></div>
+                <div class="col-sm-3"></div>
             </div>
 
 

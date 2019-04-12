@@ -1,4 +1,7 @@
+<!DOCTYPE html>
+<html>
 <head>
+
     <?php include("head.php");?>
 </head>
 
@@ -6,10 +9,10 @@
 <body>
 
 <div class="container">
-<div class="card-deck">
+
     <div class="row">
-        <div class="col col-md-4 py-6">
-            <div class="card" style="width: 20rem;">
+        <div class="col col-lg-4 py-4">
+            <div class="card" style="width: 25rem; height: 30rem;">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -20,8 +23,8 @@
             </div>
         </div>
 
-        <div class="col col-md-4">
-            <div class="card" style="width: 25rem;">
+        <div class="col col-lg-4 py-4">
+            <div class="card" style="width: 25rem; height: 30rem;">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -32,8 +35,8 @@
             </div>
         </div>
 
-        <div class="col col-md-4">
-            <div class="card" style="width: 20rem;">
+        <div class="col col-lg-4 py-4">
+            <div class="card" style="width: 20rem; height: 30rem;">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -44,8 +47,8 @@
             </div>
         </div>
 
-        <div class="col col-md-4">
-            <div class="card text-primary border-primary" style="width: 25rem; border: 1px;">
+        <div class="col col-lg-4 py-4">
+            <div class="card text-primary border-primary" style="width: 25rem; height: 30rem;">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -58,7 +61,7 @@
 
 
     </div>
-</div>
+
 <div class="row">
 <div class="container py-4">
     <h4>Card Deck Equal Height</h4>
@@ -79,7 +82,7 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="margin-bottom: 0.75rem;">
             <img class="card-img-top img-fluid" src="//placehold.it/200x150" alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
@@ -87,9 +90,7 @@
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-    </div>
-    <br>
-    <div class="card-deck">
+    
         <div class="card">
             <img class="card-img-top img-fluid" src="//placehold.it/200x300" alt="Card image cap">
             <div class="card-body">
@@ -116,7 +117,11 @@
             </div>
         </div>
     </div>
+
 </div>
 </div>
+<?php include("footer.php")?>
 </div>
+
 </body>
+</html>
