@@ -3,7 +3,7 @@
     require('dbconnection.php');
     
 
-    if (isset($_POST['username'])){
+    if (isset($_POST['submit'])){
         $username = $_POST['username'];
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -54,7 +54,7 @@
                         <br>
                         <input type="Email" name="email" class="form-control mb-4" placeholder="Email">
                         <br><br>
-                        <button class="btn btn-info btn-block my-4" type="submit">Sign up</button>
+                        <button class="btn btn-info btn-block my-4" type="submit" name="submit">Sign up</button>
                         
                         <p>Already a member?
                             <a href="">Login</a>

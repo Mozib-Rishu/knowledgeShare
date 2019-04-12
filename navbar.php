@@ -12,7 +12,7 @@
         <?php 
           if(isset($_SESSION['username']))
           {
-            echo '<li><a href="#">Create Course</a></li>';
+            echo '<li><a href="create_course.php">Create Course</a></li>';
             echo '<li><a href="#">My Profile</a></li>';
             echo '<li><a href="logout.php">Logout</a></li>';
           }
