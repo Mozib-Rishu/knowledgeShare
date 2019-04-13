@@ -58,7 +58,7 @@
 
                         <div class="form-group">
                             <label for="Title">Title:</label>
-                            <input type="text" class="form-control" name="title">
+                            <input type="text" required  class="form-control" name="title">
                           </div>
 
                           <div>

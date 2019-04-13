@@ -48,11 +48,11 @@
                         <p class="h2 mb-4">Sign Up</p>
 
 
-                        <input type="text" name="username" class="form-control" placeholder="User Name">
+                        <input type="text" name="username" class="form-control" placeholder="User Name" required>
                         <br>
-                        <input type="password" name="password" class="form-control mb-4" placeholder="Password">
+                        <input type="password" name="password" required  class="form-control mb-4" placeholder="Password">
                         <br>
-                        <input type="Email" name="email" class="form-control mb-4" placeholder="Email">
+                        <input type="Email" name="email" required class="form-control mb-4" placeholder="Email">
                         <br><br>
                         <button class="btn btn-info btn-block my-4" type="submit" name="submit">Sign up</button>
                         

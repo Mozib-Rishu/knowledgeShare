@@ -57,7 +57,7 @@
 
                         <div class="form-group">
                             <label for="Title">Title:</label>
-                            <input type="text" value="<?php echo $course['course_title'] ?>" class="form-control" name="title">
+                            <input type="text" required  value="<?php echo $course['course_title'] ?>" class="form-control" name="title">
                           </div>
                           <div class="form-group">
                             <label for="description">Description:</label>

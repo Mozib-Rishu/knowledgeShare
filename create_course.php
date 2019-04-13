@@ -52,7 +52,7 @@
 
                         <div class="form-group">
                             <label for="Title">Title:</label>
-                            <input type="text" class="form-control" name="title">
+                            <input type="text" class="form-control" required  name="title">
                           </div>
                           <div class="form-group">
                             <label for="description">Description:</label>

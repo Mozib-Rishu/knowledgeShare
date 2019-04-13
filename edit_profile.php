@@ -66,7 +66,7 @@
 
                         <div class="form-group">
                             <label for="user_email">Email:</label>
-                            <input type="text" value="<?php echo $user_email ?>" class="form-control" name="user_email">
+                            <input type="email" required  value="<?php echo $user_email ?>" class="form-control" name="user_email">
                           </div>
                           <div class="form-group">
                             <label for="profile_name">Name:</label>
