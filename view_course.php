@@ -56,7 +56,7 @@
                     if($username===$_SESSION['username'])
                     {?>
                         
-                            <a onclick="return confirm('Are you Sure?');" href="delete_lecture.php?lecture_id=<?php echo $lecture_id; ?>&course_id=<?php echo $lecture['lecture_courseid']; ?>&username=<?php echo $lecture['lecture_username']; ?>"><button type="button" class="btn btn-primary">Delete</button></a>
+                            <a onclick="return confirm('Are you Sure?');" href="delete_lecture.php?lecture_id=<?php echo $lecture_id; ?>&course_id=<?php echo $lecture['lecture_courseid']; ?>&username=<?php echo $lecture['lecture_username']; ?>"><button type="button" class="btn btn-danger">Delete</button></a>
 
                             <a href="update_lecture.php?lecture_id=<?php echo $lecture_id; ?>&course_id=<?php echo $lecture['lecture_courseid']; ?>&username=<?php echo $lecture['lecture_username']; ?>"><button type="button" class="btn btn-primary">Edit</button></a>
                             <hr>

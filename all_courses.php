@@ -46,9 +46,9 @@
 
                     if($course['course_username']===$_SESSION['username'])
                     {?>
-                        <a href="update_course.php?course_id=<?php echo $course['course_id']; ?>&course_username=<?php echo $course['course_username']; ?>"><button type="button" class="btn btn-primary" style="float: left;overflow: hidden;">Update</button></a>
+                        <a href="update_course.php?course_id=<?php echo $course['course_id']; ?>&course_username=<?php echo $course['course_username']; ?>"><button type="button" class="btn btn-primary">Update</button></a>
 
-                        <a onclick="return confirm('Are you Sure?');" href="delete_course.php?course_id=<?php echo $course['course_id']; ?>"><button type="button" class="btn btn-primary">Delete</button></a>
+                        <a onclick="return confirm('Are you Sure?');" href="delete_course.php?course_id=<?php echo $course['course_id']; ?>"><button type="button" class="btn btn-danger">Delete</button></a>
 
 
                     <?php }

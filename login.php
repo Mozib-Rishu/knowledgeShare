@@ -14,7 +14,7 @@
 
         $result = mysqli_query($conn,$query);
         
-        if($result){
+        if(mysqli_num_rows($result)>0){
 
             $_SESSION['username'] = $username;
             header('location: index.php');
