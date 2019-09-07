@@ -47,7 +47,7 @@
                         
                         <form action="create_course.php" method="post" class="border p-5">
 
-                        <p class="h2 mb-4 text-center">Create Course</p>
+                        <p class="h2 mb-4 text-center">Create Lecture</p>
 
 
                         <div class="form-group">
